@@ -21,7 +21,7 @@ pipeline {
  """
   }
 	}
-     stage (copying index file)
+     stage ("copying index file")
 {
 	steps{
 	sh """sudo docker cp $Workspace/index.html httpd-1:/usr/local/apche2/htdocs
