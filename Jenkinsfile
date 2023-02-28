@@ -7,8 +7,9 @@ pipeline {
 	 cleanWs()
 	 }
     }
-    stage ("cloning git"){
-    steps {
+    stage ("checkout SCM")
+	 {
+        steps {
      checkout scm
     }
     }
