@@ -16,8 +16,8 @@ pipeline {
 	{
 	steps{
   sh """sudo docker run -itdp 80:80 --name httpd-1 httpd"
-   sudo docker run -itdp 80:81 --name httpd-2 httpd"
-   sudo docker run -itdp 80:82 --name httpd-3 httpd"
+   sudo docker run -itdp 81:80 --name httpd-2 httpd"
+   sudo docker run -itdp 82:80 --name httpd-3 httpd"
  """
   }
 	}
