@@ -27,9 +27,9 @@ stages {
 {
 	steps
 {
-	   sh '''sudo docker cp $WORKSPACE/index.html httpd-1:/usr/local/apche2/htdocs
-	    sudo docker cp $WORKSPACE/index1.html httpd-2:/usr/local/apche2/htdocs
-	    sudo docker cp $WORKSPACE/index2.html httpd-3:/usr/local/apche2/htdocs
+	   sh '''sudo docker cp $WORKSPACE/index.html httpd-1:/usr/local/apache2/htdocs
+	    sudo docker cp $WORKSPACE/index1.html httpd-2:/usr/local/apache2/htdocs
+	    sudo docker cp $WORKSPACE/index2.html httpd-3:/usr/local/apache2/htdocs
 	 '''
 	}
 }
